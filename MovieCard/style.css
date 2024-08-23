@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #222;
+    color: #fff;
+}
+
+header {
+    width: 100%;
+    background-color: #333;
+    padding: 16px 4%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 2em;
+    color: red;
+    font-weight: 700;
+    user-select: none;
+    margin-left: 20px;
+}
+
+.navigation {
+    display: flex;
+}
+
+.navigation a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    margin-left: 20px;
+    padding: 8px 15px;
+    border-radius: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.navigation a:hover,
+.navigation a.active {
+    background-color: #555;
+}
+
+#movies-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+.movie-card {
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 15px;
+    overflow: hidden;
+    width: 100%;
+    max-width: 800px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.movie-poster {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #444;
+}
+
+.movie-details {
+    padding: 20px;
+    text-align: left;
+    width: 100%;
+}
+
+.movie-title {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.movie-meta {
+    margin-bottom: 15px;
+    font-size: 1.2em;
+    color: #ccc;
+}
+
+.movie-ratings,
+.movie-director,
+.movie-actors,
+.movie-writer,
+.movie-language,
+.movie-award,
+.movie-country {
+    margin-bottom: 10px;
+}
+
+.movie-ratings span,
+.movie-director span,
+.movie-actors span,
+.movie-writer span,
+.movie-language span,
+.movie-award span,
+.movie-country span {
+    font-weight: bolder;
+}
+
+.movie-plot {
+    font-size: 1em;
+    line-height: 1.6;
+    color: #ddd;
+}
